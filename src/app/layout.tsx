@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/header";
 
 const nunitoFont = Nunito({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Header />
       <body className={`${nunitoFont.className}`}>
         {children}
       </body>
