@@ -1,9 +1,10 @@
 import RestaurantsList from "@/components/restaurants-list";
+import styles from "./page.module.css";
+
 export default function Home() {
   return (
     <div>
-      <main>
-        <h2>abertos</h2>
+      <main className={styles.main}>
         <RestaurantsList />
       </main>
     </div>
