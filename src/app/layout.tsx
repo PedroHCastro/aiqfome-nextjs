@@ -5,12 +5,13 @@ import { Header } from "@/components/header";
 
 const nunitoFont = Nunito({
   subsets: ["latin"],
-  weight: '700'
+  weight: "700",
 });
 
 export const metadata: Metadata = {
   title: "O melhor delivery de tudo é no aiqfome",
-  description: "Peça comida, bebidas, mercado, farmácia, padaria, pet shop e muito mais pelo maior aplicativo de delivery do interior. Baixe o app agora mesmo!",
+  description:
+    "Peça comida, bebidas, mercado, farmácia, padaria, pet shop e muito mais pelo maior aplicativo de delivery do interior. Baixe o app agora mesmo!",
 };
 
 export default function RootLayout({
@@ -20,8 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Header />
       <body className={`${nunitoFont.className}`}>
+        <Header />
         {children}
       </body>
     </html>
