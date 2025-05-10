@@ -1,0 +1,104 @@
+{
+  "open": [
+    {
+      "id": 1,
+      "name": "Matsuri Concept",
+      "delivery": 0.0,
+      "rating": 4.7,
+      "logo": "matsuri.png"
+    },
+    {
+      "id": 2,
+      "name": "Subway - Avenida center",
+      "delivery": 6.0,
+      "rating": 4.7,
+      "logo": "subway.png"
+    },
+    {
+      "id": 3,
+      "name": "Burger King - Colombo",
+      "delivery": 6.0,
+      "rating": 4.7,
+      "logo": "burgerking.png"
+    },
+    {
+      "id": 4,
+      "name": "Burger King - Colombo",
+      "delivery": 6.0,
+      "rating": 4.7,
+      "logo": "burgerking.png"
+    },
+    {
+      "id": 5,
+      "name": "McDonald’s - Novo Centro",
+      "delivery": 0.0,
+      "rating": 4.7,
+      "logo": "mcdonalds.png"
+    },
+    {
+      "id": 6,
+      "name": "Subway - Avenida center",
+      "delivery": 6.0,
+      "rating": 4.7,
+      "logo": "subway.png"
+    },
+    {
+      "id": 7,
+      "name": "McDonald’s - Novo Centro",
+      "delivery": 0.0,
+      "rating": 4.7,
+      "logo": "mcdonalds.png"
+    },
+    {
+      "id": 8,
+      "name": "Matsuri Concept",
+      "delivery": 0.0,
+      "rating": 4.7,
+      "logo": "matsuri.png"
+    }
+  ],
+  "closed": [
+    {
+      "id": 9,
+      "name": "Matsuri Concept",
+      "delivery": 0.0,
+      "rating": 4.7,
+      "logo": "matsuri.png"
+    },
+    {
+      "id": 10,
+      "name": "Subway - Avenida center",
+      "delivery": 6.0,
+      "rating": 4.7,
+      "logo": "subway.png"
+    },
+    {
+      "id": 11,
+      "name": "Burger King - Colombo",
+      "delivery": 6.0,
+      "rating": 4.7,
+      "logo": "burgerking.png"
+    },
+    {
+      "id": 12,
+      "name": "McDonald’s - Novo Centro",
+      "delivery": 0.0,
+      "rating": 4.7,
+      "logo": "mcdonalds.png"
+    },
+    {
+      "id": 13,
+      "name": "Subway - Avenida center",
+      "delivery": 6.0,
+      "rating": 4.7,
+      "logo": "subway.png"
+    },
+    {
+      "id": 14,
+      "name": "McDonald’s - Novo Centro",
+      "delivery": 0.0,
+      "rating": 4.7,
+      "logo": "mcdonalds.png"
+    }
+  ]
+}
