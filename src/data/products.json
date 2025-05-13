@@ -1,0 +1,136 @@
+[
+  {
+    "id": 1,
+    "category": "Niguiris",
+    "hasPromotionalPrice": true,
+    "itens": [
+      {
+        "name": "Salmão",
+        "slug": "niguiri-salmao",
+        "fullPrice": 8.0,
+        "promotionalPrice": 6.5,
+        "description": "Arroz temperado coberto com salmão fresco"
+      },
+      {
+        "name": "Atum",
+        "slug": "niguiri-atum",
+        "fullPrice": 8.0,
+        "description": "Arroz temperado coberto com fatia de atum"
+      },
+      {
+        "name": "Skin",
+        "slug": "niguiri-skin",
+        "fullPrice": 7.5,
+        "description": "Pele de salmão grelhada sobre arroz",
+        "icon": "hot"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Ceviches",
+    "description": "um prato super refrescante de peixe fatiado e marinado com limão",
+    "hasPromotionalPrice": true,
+    "itens": [
+      {
+        "name": "Ceviche Clássico",
+        "slug": "ceviche-classico",
+        "fullPrice": 22.0,
+        "promotionalPrice": 18.9,
+        "description": "Peixe branco marinado no limão com cebola roxa e coentro"
+      },
+      {
+        "name": "Ceviche de Salmão",
+        "slug": "ceviche-salmao",
+        "fullPrice": 24.0,
+        "description": "Cubos de salmão fresco com limão, cebola, coentro e pimenta"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Temakis",
+    "description": "sushi em forma de cone com salmão e cream cheese",
+    "hasPromotionalPrice": true,
+    "itens": [
+      {
+        "name": "Califórnia",
+        "slug": "california",
+        "fullPrice": 17.0,
+        "promotionalPrice": 13.99,
+        "description": "Kani, pepino e maçã ou manga",
+        "icon": "veg"
+      },
+      {
+        "name": "Filadélfia",
+        "slug": "filadelfia",
+        "fullPrice": 13.99,
+        "description": "Arroz, salmão fresco, cream cheese e cebolinha"
+      },
+      {
+        "name": "Mix",
+        "slug": "mix",
+        "fullPrice": 13.99,
+        "description": "Escolha 3 ingredientes: shimeji, alface americana, rúcula, pepino, tomate seco, cream cheese, maionese",
+        "icon": "hot",
+        "startingAt": true
+      },
+      {
+        "name": "Salmão picante",
+        "slug": "salmão-picante",
+        "fullPrice": 13.99,
+        "description": "Alga, arroz, salmão fresco, pimenta e cebola",
+        "icon": "hot",
+        "startingAt": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Bebidas",
+    "itens": [
+      {
+        "name": "Refrigerante lata",
+        "slug": "refrigerante-lata",
+        "fullPrice": 6.0,
+        "description": "Escolha: Coca-Cola, Guaraná, Sprite ou Zero"
+      },
+      {
+        "name": "Água com gás",
+        "slug": "agua-com-gas",
+        "fullPrice": 4.5,
+        "description": "Água mineral com gás"
+      },
+      {
+        "name": "Chá gelado",
+        "slug": "cha-gelado",
+        "fullPrice": 7.0,
+        "description": "Chá verde ou de limão, sem açúcar"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Sobremesas",
+    "itens": [
+      {
+        "name": "Hot roll doce",
+        "slug": "hot-roll-doce",
+        "fullPrice": 12.0,
+        "description": "Banana com chocolate enrolada em arroz e alga, empanada e frita"
+      },
+      {
+        "name": "Harumaki de doce de leite",
+        "slug": "harumaki-doce-de-leite",
+        "fullPrice": 10.0,
+        "description": "Rolinho primavera recheado com doce de leite"
+      },
+      {
+        "name": "Mousse de maracujá",
+        "slug": "mousse-maracuja",
+        "fullPrice": 8.0,
+        "description": "Mousse leve e cremoso de maracujá"
+      }
+    ]
+  }
+]
