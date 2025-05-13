@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
-import { Header } from "@/components/global";
+import { Header, Footer } from "@/components/global";
 
 import "./globals.css";
 
@@ -48,6 +48,7 @@ export default function RootLayout({
       <body className={`${nunito.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

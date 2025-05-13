@@ -1,0 +1,33 @@
+.footer {
+  width: 100%;
+  background: #eef0f5;
+  padding: 24px;
+  margin-top: auto;
+}
+
+.footerLabel,
+.footerInfo {
+  font-size: 14px;
+  color: #580f78;
+  text-align: center;
+}
+
+.footerInfo {
+  font-size: 16px;
+
+  margin-top: 8px;
+}
+
+.footerInfo:nth-last-of-type(1) {
+  margin-top: 0px;
+}
+
+.seeTicketButton {
+  width: 100%;
+  padding: 13px;
+  margin-top: 16px;
+  background: #7b1fa2;
+
+  font-size: 16px;
+  color: #ffffff;
+}
