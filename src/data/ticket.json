@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Ceviche de salmão",
+    "price": 19.9,
+    "quantity": 2,
+    "extras": [
+      {
+        "id": 1,
+        "title": "tamanho",
+        "itens": [{ "option": "médio" }]
+      },
+      {
+        "id": 2,
+        "title": "vai querer bebida?",
+        "itens": [{ "option": "coca-cola", "price": 5.0 }]
+      }
+    ]
+  },
+  {
+    "name": "Temaki Filadélfia",
+    "price": 14.0,
+    "quantity": 1,
+    "extras": [
+      {
+        "id": 1,
+        "title": "escolha 3 ingredientes",
+        "itens": [
+          { "option": "shimeji" },
+          { "option": "cream cheese" },
+          { "option": "tomate seco" }
+        ]
+      }
+    ],
+    "note": "tirar a cebolinha"
+  },
+  {
+    "name": "Temaki Mix",
+    "price": 22.0,
+    "quantity": 1,
+    "extras": [
+      {
+        "id": 1,
+        "title": "quer o dobro?",
+        "itens": [{ "option": "salmão", "price": 8.0 }]
+      }
+    ]
+  },
+  {
+    "name": "Coca-cola lata",
+    "price": 10.0,
+    "quantity": 2
+  }
+]
