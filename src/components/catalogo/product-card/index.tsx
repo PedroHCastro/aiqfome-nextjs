@@ -4,12 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { DiscountIcon, HotIcon, VegIcon } from "@/assets/icons";
-import { MenuItem } from "@/types/products";
+import { ProductItem } from "@/types/products";
 
 import styles from "./product-card.module.css";
 
 interface Props {
-  data: MenuItem;
+  data: ProductItem;
 }
 
 export function ProductCard({ data }: Props) {

@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import styles from "./products-list.module.css";
-import { MenuCategory } from "@/types/products";
+import { ProductsModel } from "@/types/products";
 import { ChevronDownIcon, DiscountIcon } from "@/assets/icons";
 import { ProductCard } from "../product-card";
 
 interface Props {
-  items: MenuCategory[];
+  items: ProductsModel[];
 }
 
 export function ProductsList({ items }: Props) {
