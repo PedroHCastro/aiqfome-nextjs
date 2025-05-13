@@ -1,0 +1,72 @@
+.contentHeaderWrapper {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 16px;
+  color: #202326;
+}
+
+.description {
+  font-size: 12px;
+  color: #6d6f73;
+
+  margin-bottom: 16px;
+}
+
+.requiredTag {
+  color: #ffffff;
+
+  padding: 6px 8px;
+  border-radius: 4px;
+  background: #393a3c;
+}
+
+.item {
+  width: 100%;
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+}
+
+.check {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #a8adb7;
+  margin-right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio {
+  border-radius: 16px;
+}
+.select {
+  border-radius: 4px;
+}
+
+.check.selected {
+  background: #00a296;
+
+  border-color: #00a296;
+}
+
+.optionLabel {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6d6f73;
+}
+
+.priceLabel {
+  font-size: 14px;
+  color: #7b1fa2;
+
+  margin-left: auto;
+}
