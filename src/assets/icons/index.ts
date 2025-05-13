@@ -11,6 +11,7 @@ import DecrementIcon from "./decrement-icon.svg";
 import IncrementIcon from "./increment-icon.svg";
 import TrashIcon from "./trash-icon.svg";
 import PencilIcon from "./pencil-icon.svg";
+import SearchIcon from "./search-icon.svg";
 
 export {
   ChevronRightIcon,
@@ -26,4 +27,5 @@ export {
   IncrementIcon,
   TrashIcon,
   PencilIcon,
+  SearchIcon,
 };
