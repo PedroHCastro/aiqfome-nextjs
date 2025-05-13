@@ -7,6 +7,9 @@ import DeliveryIcon from "./delivery-icon.svg";
 import HeartIcon from "./heart-icon.svg";
 import ShareIcon from "./share-icon.svg";
 import RatingIcon from "./rating-icon.svg";
+import DecrementIcon from "./decrement-icon.svg";
+import IncrementIcon from "./increment-icon.svg";
+import TrashIcon from "./trash-icon.svg";
 export {
   ChevronRightIcon,
   ChevronDownIcon,
@@ -17,4 +20,7 @@ export {
   HeartIcon,
   ShareIcon,
   RatingIcon,
+  DecrementIcon,
+  IncrementIcon,
+  TrashIcon,
 };
