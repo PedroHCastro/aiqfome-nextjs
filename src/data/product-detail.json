@@ -1,0 +1,70 @@
+{
+  "name": "Salmon Ceviche",
+  "slug": "salmon-ceviche",
+  "startingAt": true,
+  "fullPrice": 28.9,
+  "promotionalPrice": 19.9,
+  "description": "Salmon seasoned with lemon, onion and chili",
+  "options": [
+    {
+      "title": "Size",
+      "type": "single",
+      "required": true,
+      "choices": [
+        {
+          "name": "Medium",
+          "originalPrice": 22.9,
+          "price": 19.9,
+          "highlight": true
+        },
+        {
+          "name": "Large",
+          "price": 28.9
+        }
+      ]
+    },
+    {
+      "title": "Sides",
+      "type": "multiple",
+      "required": true,
+      "min": 1,
+      "max": 2,
+      "choices": [
+        { "name": "Shoyu" },
+        { "name": "Ginger" },
+        { "name": "Wasabi" },
+        { "name": "No sides" }
+      ]
+    },
+    {
+      "title": "Drink?",
+      "type": "quantity",
+      "choices": [
+        { "name": "Coca-Cola", "price": 5.0 },
+        { "name": "Fanta Orange", "price": 5.0 },
+        { "name": "Guaraná Antarctica", "price": 5.0 },
+        { "name": "Prats Orange Juice", "price": 6.0 },
+        { "name": "Still Water", "price": 3.0 }
+      ]
+    },
+    {
+      "title": "Need cutlery?",
+      "type": "single",
+      "max": 1,
+      "choices": [
+        { "name": "Chopsticks" },
+        { "name": "Disposable fork and knife", "price": 1.0 }
+      ]
+    },
+    {
+      "title": "Anything else?",
+      "type": "multiple",
+      "max": 2,
+      "choices": [
+        { "name": "Fortune cookie", "price": 2.0 },
+        { "name": "Spring roll", "price": 8.0 },
+        { "name": "Gyoza", "price": 6.0 }
+      ]
+    }
+  ]
+}
