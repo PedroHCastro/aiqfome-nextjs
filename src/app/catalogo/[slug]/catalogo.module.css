@@ -1,0 +1,85 @@
+.container * {
+  font-size: 12px;
+}
+
+.metadataWrapper {
+  padding: 24px 16px;
+}
+
+.flexWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 4px 0;
+}
+
+.actionButton {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+}
+
+.actionButton:nth-of-type(2) {
+  margin-left: 12px;
+}
+
+.moreInfos {
+  color: #00a296;
+
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.moreInfos svg,
+.deliveryPriceWrapper svg,
+.ratingWrapper svg {
+  width: 4px;
+  height: 8px;
+
+  margin-left: 6px;
+}
+.moreInfos svg {
+  fill: #00a296;
+}
+
+.deliveryPriceWrapper svg {
+  fill: #7b1fa2;
+}
+
+.ratingWrapper svg {
+  fill: #6d6f73;
+}
+
+.deliveryIcon {
+  fill: #7b1fa2;
+}
+
+.deliveryPriceLabel {
+  font-size: 14px;
+  color: #7b1fa2;
+
+  margin-left: 4px;
+}
+
+.commonLabel {
+  color: #6d6f73;
+}
+
+.ratingLabel {
+  margin-left: 6px;
+}
+
+.freeDeliveryOrdersOver {
+  color: #027a7a;
+
+  display: inline-block;
+  padding: 6px 4px;
+  background: #f2fafa;
+  border-radius: 4px;
+}
+
+.closedTime {
+  color: #02a117;
+}
