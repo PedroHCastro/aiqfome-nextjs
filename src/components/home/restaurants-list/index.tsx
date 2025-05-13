@@ -1,8 +1,8 @@
 import restaurants from "@/data/restaurants.json";
-import { RestaurantCard } from "@/components/restaurant-card";
+import { RestaurantCard } from "@/components/home";
 import styles from "./restaurants-list.module.css";
 
-export default function RestaurantsList() {
+export function RestaurantsList() {
   return (
     <div>
       <section>

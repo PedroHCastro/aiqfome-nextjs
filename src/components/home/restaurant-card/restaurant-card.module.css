@@ -48,15 +48,6 @@
   color: #7b1fa2;
 }
 
-.detail {
-  font-size: 12px;
-  color: #a8adb7;
-
-  margin: 0 4px;
-  display: flex;
-  align-self: center;
-}
-
 .rating {
   font-size: 14px;
   color: #6d6f73;
