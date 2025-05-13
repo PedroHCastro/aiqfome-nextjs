@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 4px 0;
+}
+
+.logo {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.titleWrapper {
+  margin-left: 8px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #202326;
+}
+
+.extraInformation {
+  font-size: 14px;
+  color: #6d6f73;
+}
+
+.titleWithExtraInformation {
+  font-size: 16px;
+  color: #202326;
+}
