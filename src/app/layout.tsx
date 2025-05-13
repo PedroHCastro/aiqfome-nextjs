@@ -1,11 +1,35 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
-import "./globals.css";
-import { Header } from "@/components/header";
+import localFont from "next/font/local";
 
-const nunitoFont = Nunito({
-  subsets: ["latin"],
-  weight: "700",
+import { Header } from "@/components/global";
+
+import "./globals.css";
+
+const nunito = localFont({
+  src: [
+    {
+      path: "../assets/fonts/Nunito/Nunito-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/Nunito/Nunito-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/Nunito/Nunito-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../assets/fonts/Nunito/Nunito-ExtraBold.ttf",
+      weight: "800",
+      style: "normal",
+    },
+  ],
+  variable: "--font-nunito",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nunitoFont.className}`}>
+      <body className={`${nunito.variable}`}>
         <Header />
         {children}
       </body>
