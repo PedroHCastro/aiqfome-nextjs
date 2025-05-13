@@ -1,0 +1,92 @@
+.container {
+  background: #eef0f5;
+}
+
+.contentWrapper {
+  padding: 16px;
+  background: #ffffff;
+  margin-bottom: 4px;
+}
+
+.title {
+  font-size: 20px;
+  color: #393a3c;
+
+  margin-bottom: 6px;
+}
+
+.startingAtWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.startingAt {
+  font-size: 14px;
+  font-weight: 800;
+  color: #6d6f73;
+}
+
+.startingAtValue {
+  font-size: 18px;
+  font-weight: 800;
+  color: #7b1fa2;
+
+  margin-left: 8px;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6d6f73;
+
+  display: inline-block;
+}
+
+.totalValueWrapper {
+  width: 100%;
+  padding: 8px 0;
+  margin-top: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totalValueContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quantityLabel {
+  font-size: 16px;
+  color: #393a3c;
+  margin-bottom: 6px;
+}
+
+.totalLabel {
+  font-size: 14px;
+  color: #6d6f73;
+
+  display: flex;
+  align-items: center;
+}
+
+.totalValue {
+  font-size: 14px;
+  color: #393a3c;
+
+  margin-left: 4px;
+}
+
+.observationArea {
+  color: #6d6f73;
+
+  width: 100%;
+  padding: 10px 12px;
+  background: #ffffff;
+  margin-bottom: 40px;
+
+  border: 1px solid #cdd1d9;
+  border-radius: 4px;
+}
