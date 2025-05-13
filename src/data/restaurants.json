@@ -3,6 +3,7 @@
     {
       "id": 1,
       "name": "Matsuri Concept",
+      "slug": "matsuri-concept",
       "delivery": 0.0,
       "rating": 4.7,
       "logo": "matsuri.png"
@@ -10,6 +11,7 @@
     {
       "id": 2,
       "name": "Subway - Avenida center",
+      "slug": "subway-avenida-center",
       "delivery": 6.0,
       "rating": 4.7,
       "logo": "subway.png"
@@ -17,6 +19,7 @@
     {
       "id": 3,
       "name": "Burger King - Colombo",
+      "slug": "burger-king-colombo",
       "delivery": 6.0,
       "rating": 4.7,
       "logo": "burgerking.png"
@@ -24,6 +27,7 @@
     {
       "id": 4,
       "name": "Burger King - Colombo",
+      "slug": "burger-king-colombo",
       "delivery": 6.0,
       "rating": 4.7,
       "logo": "burgerking.png"
@@ -31,6 +35,7 @@
     {
       "id": 5,
       "name": "McDonald’s - Novo Centro",
+      "slug": "mcdonalds-novo-centro",
       "delivery": 0.0,
       "rating": 4.7,
       "logo": "mcdonalds.png"
@@ -38,6 +43,7 @@
     {
       "id": 6,
       "name": "Subway - Avenida center",
+      "slug": "subway-avenida-center",
       "delivery": 6.0,
       "rating": 4.7,
       "logo": "subway.png"
@@ -45,6 +51,7 @@
     {
       "id": 7,
       "name": "McDonald’s - Novo Centro",
+      "slug": "mcdonalds-novo-centro",
       "delivery": 0.0,
       "rating": 4.7,
       "logo": "mcdonalds.png"
@@ -52,6 +59,7 @@
     {
       "id": 8,
       "name": "Matsuri Concept",
+      "slug": "matsuri-concept",
       "delivery": 0.0,
       "rating": 4.7,
       "logo": "matsuri.png"
@@ -61,6 +69,7 @@
     {
       "id": 9,
       "name": "Matsuri Concept",
+      "slug": "matsuri-concept",
       "delivery": 0.0,
       "rating": 4.7,
       "logo": "matsuri.png"
@@ -68,6 +77,7 @@
     {
       "id": 10,
       "name": "Subway - Avenida center",
+      "slug": "subway-avenida-center",
       "delivery": 6.0,
       "rating": 4.7,
       "logo": "subway.png"
@@ -75,6 +85,7 @@
     {
       "id": 11,
       "name": "Burger King - Colombo",
+      "slug": "burger-king-colombo",
       "delivery": 6.0,
       "rating": 4.7,
       "logo": "burgerking.png"
@@ -82,6 +93,7 @@
     {
       "id": 12,
       "name": "McDonald’s - Novo Centro",
+      "slug": "mcdonalds-novo-centro",
       "delivery": 0.0,
       "rating": 4.7,
       "logo": "mcdonalds.png"
@@ -89,6 +101,7 @@
     {
       "id": 13,
       "name": "Subway - Avenida center",
+      "slug": "subway-avenida-center",
       "delivery": 6.0,
       "rating": 4.7,
       "logo": "subway.png"
@@ -96,6 +109,7 @@
     {
       "id": 14,
       "name": "McDonald’s - Novo Centro",
+      "slug": "mcdonalds-novo-centro",
       "delivery": 0.0,
       "rating": 4.7,
       "logo": "mcdonalds.png"
