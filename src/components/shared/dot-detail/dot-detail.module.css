@@ -1,0 +1,8 @@
+.detail {
+  font-size: 12px;
+  color: #a8adb7;
+
+  margin: 0 4px;
+  display: flex;
+  align-self: center;
+}
