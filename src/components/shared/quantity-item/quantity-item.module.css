@@ -1,0 +1,28 @@
+.countWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.deleteButton {
+  margin-bottom: -5px;
+
+  background: transparent;
+}
+
+.countButton {
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 24px;
+  border: 1px solid #00a296;
+}
+
+.quantityValue {
+  color: #393a3c;
+  margin: 0 16px;
+}
