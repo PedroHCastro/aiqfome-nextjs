@@ -10,6 +10,8 @@ import RatingIcon from "./rating-icon.svg";
 import DecrementIcon from "./decrement-icon.svg";
 import IncrementIcon from "./increment-icon.svg";
 import TrashIcon from "./trash-icon.svg";
+import PencilIcon from "./pencil-icon.svg";
+
 export {
   ChevronRightIcon,
   ChevronDownIcon,
@@ -23,4 +25,5 @@ export {
   DecrementIcon,
   IncrementIcon,
   TrashIcon,
+  PencilIcon,
 };
