@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 import { QuantitySelector, OptionGroup } from "@/components/product";
 import { QuantityItem } from "@/components/shared";
 import { formatPrice } from "@/utils";
+import { useTicket } from "@/hooks/useTicket";
 
 import styles from "./product.module.css";
 
@@ -79,10 +81,12 @@ export default function ProductPage() {
     id: 1,
     name: "Ceviche de salmão",
     price: 19.9,
-    quantity: 1,
+    quantity: 0,
     items: [],
   });
   const [startingAtValue] = useState(currentItem.price);
+  const { addToTicket } = useTicket();
+  const router = useRouter();
 
   const handleAddQuantity = () => {
     setCurrentItem((prev) => ({
@@ -197,6 +201,11 @@ export default function ProductPage() {
     });
   };
 
+  const handleAddToTicket = () => {
+    addToTicket(currentItem);
+    router.push("/ticket");
+  };
+
   return (
     <div className={styles.container}>
       <Image
@@ -287,9 +296,17 @@ export default function ProductPage() {
         />
       </div>
 
-      <div className={styles.buttonTickerWrapper}>
-        <button className={styles.seeTicketButton}>ver ticket</button>
-      </div>
+      {currentItem.quantity > 0 && (
+        <div className={styles.buttonTickerWrapper}>
+          <button
+            className={styles.seeTicketButton}
+            onClick={handleAddToTicket}
+          >
+            PÕE NO TICKET -{" "}
+            {formatPrice(currentItem.price * currentItem.quantity)}
+          </button>
+        </div>
+      )}
     </div>
   );
 }
