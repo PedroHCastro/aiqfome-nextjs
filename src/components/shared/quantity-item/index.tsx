@@ -6,16 +6,34 @@ import { DecrementIcon, IncrementIcon, TrashIcon } from "@/assets/icons";
 
 import styles from "./quantity-item.module.css";
 
-export function QuantityItem() {
-  const [quantity, setQuantity] = useState<number>(1);
+interface Props {
+  handleRemoveItem(): void;
+  handleAddItem(): void;
+  quantity: number;
+}
 
-  const deleteItem = () => {};
+export function QuantityItem({
+  handleRemoveItem,
+  handleAddItem,
+  quantity,
+}: Props) {
+  const [quantityLocal, setQuantity] = useState<number>(quantity);
+
+  const deleteItem = () => {
+    handleRemoveItem();
+  };
 
   const updateQuantity = (delta: number) => {
     setQuantity((prev) => {
       const updated = Math.max(1, prev + delta);
       return updated;
     });
+
+    if (delta > 0) {
+      handleAddItem();
+    } else {
+      deleteItem();
+    }
   };
 
   return (
@@ -32,7 +50,7 @@ export function QuantityItem() {
           <DecrementIcon />
         </button>
       )}
-      <span className={styles.quantityValue}>{quantity}</span>
+      <span className={styles.quantityValue}>{quantityLocal}</span>
       <button className={styles.countButton} onClick={() => updateQuantity(1)}>
         <IncrementIcon />
       </button>
