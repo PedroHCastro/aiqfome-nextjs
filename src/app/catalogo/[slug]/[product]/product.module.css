@@ -79,6 +79,13 @@
   margin-left: 4px;
 }
 
+.addItemButon {
+  padding: 10px 24px;
+  background: #6d6f73;
+
+  border-radius: 8px;
+}
+
 .observationArea {
   color: #6d6f73;
 
@@ -89,4 +96,25 @@
 
   border: 1px solid #cdd1d9;
   border-radius: 4px;
+}
+
+.seeTicketButton {
+  width: 100%;
+  padding: 13px;
+  margin-top: 16px;
+  background: #7b1fa2;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.buttonTickerWrapper {
+  width: 100%;
+  padding: 16px 24px;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
