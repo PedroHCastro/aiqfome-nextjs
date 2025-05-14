@@ -4,6 +4,7 @@ import { PencilIcon } from "@/assets/icons";
 
 import { TicketItemModel } from "@/types";
 import { formatPrice } from "@/utils";
+import { useCurrentItemHandler } from "@/hooks";
 
 import styles from "./ticket-item.module.css";
 
@@ -12,8 +13,18 @@ export function TicketItem({
   price,
   extras = [],
   note,
+  quantity,
 }: TicketItemModel) {
   const onEdit = () => {};
+
+  const {
+    currentItem,
+    handleAddItem,
+    handleRemoveItem,
+    handleAddQuantity,
+    handleRemoveQuantity,
+  } = useCurrentItemHandler({ price: 0, items: extras }, price);
+
   return (
     <div className={styles.container}>
       <div className={styles.headerTicket}>
@@ -26,7 +37,11 @@ export function TicketItem({
           <PencilIcon className={styles.iconEdit} />
           editar
         </button>
-        <QuantityItem />
+        <QuantityItem
+          handleAddItem={handleAddQuantity}
+          handleRemoveItem={handleRemoveQuantity}
+          quantity={quantity}
+        />
       </div>
 
       {!!extras.length && (
