@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍱 aiqfome - Next.js
 
-## Getting Started
+Aplicação web de delivery inspirada em plataformas como iFood e Aiqfome. Desenvolvida com **Next.js 13+ (App Router)** e **TypeScript**, com foco em experiência mobile, performance e boas práticas de front-end.
 
-First, run the development server:
+## 🚀 Como Rodar o Projeto
+
+### 1. Instale as dependências
+
+npm install
+
+### 2. Rode o servidor de desenvolvimento
+
+npm run dev
+
+### 3. Acesse em [http://localhost:3000](http://localhost:3000)
+
+## 📱 Funcionalidades
+
+- Listagem de restaurantes com informações básicas (nome, avaliação, entrega)
+- Visualização de cardápio por categoria
+- Adição de itens ao carrinho (cart)
+- Visualização e edição do pedido
+- Persistência dos dados no `localStorage`
+- Interface responsiva com foco mobile
+- Navegação dinâmica via slugs (`/catalogo/[slug]`)
+- Uso de Server Components para otimização
+
+## 🧱 Tecnologias
+
+- [Next.js 13+ (App Router)](https://nextjs.org/docs)
+- [React 18](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [CSS Modules](https://nextjs.org/docs/app/building-your-application/styling/css-modules)
+- [LocalStorage API](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+- [Next/Image](https://nextjs.org/docs/pages/api-reference/components/image)
+- [Fontes Locais](https://nextjs.org/docs/app/building-your-application/optimizing/fonts)
+
+## 📂 Estrutura de Pastas
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+  app/              # Páginas do app (App Router)
+  components/       # Componentes reutilizáveis (ex: Accordion, RestaurantCard)
+  context/          # Context API (ex: TicketContext)
+  hooks/            # Custom hooks (ex: useTicket)
+  types/            # Tipagens compartilhadas (ex: ProductsModel, RestaurantModel, TicketItemModel)
+  styles/           # Estilos globais e variáveis
+  data/             # Dados mockados (ex: products.json)
+  assets/
+    fonts/        # Fontes locais
+    icons/        # Icones usados
+public/             # Imagens usadas nos mocks
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✅ Boas Práticas Aplicadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Componentes funcionais com separação de responsabilidades
+- Gerenciamento global de estado com React Context + hooks personalizados
+- Tipagem completa com TypeScript
+- Server Components para melhorar performance e carregamento
+- Acessibilidade básica nos componentes (semântica e alt tags)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📝 Futuras Melhorias
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Em futuras melhorias, pretendo finalizar a integração completa com os mocks e implementar todas as regras de negócio da aplicação
+- Utilizar o [MSW](https://mswjs.io/docs/getting-started) para mock de dados
+- Tela de checkout
+- Autenticação de usuário
+- Testes com Jest + React Testing Library
