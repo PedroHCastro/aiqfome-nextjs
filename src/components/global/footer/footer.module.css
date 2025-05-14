@@ -21,13 +21,3 @@
 .footerInfo:nth-last-of-type(1) {
   margin-top: 0px;
 }
-
-.seeTicketButton {
-  width: 100%;
-  padding: 13px;
-  margin-top: 16px;
-  background: #7b1fa2;
-
-  font-size: 16px;
-  color: #ffffff;
-}
