@@ -1,23 +1,28 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import styles from "./option-group.module.css";
+import { formatPrice } from "@/utils";
 
 type Option = {
   label: string;
   price?: number;
+  promotionalPrice?: number;
+  extra?: boolean;
 };
 
 type OptionGroupProps = {
   title: string;
-  description: string;
-  options: Option[];
+  description?: string;
+  options?: Option[];
   type: "radio" | "checkbox";
   required?: boolean;
   min?: number;
   max?: number;
   onChange?: (selected: number[]) => void;
+  handleAddItem?: (option: Option, configTitle: string) => void;
+  handleRemoveItem?: (option: Option, configTitle: string) => void;
 };
 
 export function OptionGroup({
@@ -29,8 +34,11 @@ export function OptionGroup({
   min,
   max,
   onChange,
+  handleRemoveItem,
+  handleAddItem,
 }: OptionGroupProps) {
   const [selected, setSelected] = useState<number[]>([]);
+  const prevSelectedRef = useRef<number[]>([]);
 
   const toggleOption = (index: number) => {
     let updated: number[] = [];
@@ -49,7 +57,26 @@ export function OptionGroup({
       }
     }
 
+    const removed = prevSelectedRef.current.filter((i) => !updated.includes(i));
+    const added = updated.filter((i) => !prevSelectedRef.current.includes(i));
+
+    removed.forEach((i) => {
+      const option = options?.[i];
+      if (option && handleRemoveItem) {
+        handleRemoveItem(option, title);
+      }
+    });
+
+    added.forEach((i) => {
+      const option = options?.[i];
+      if (option && handleAddItem) {
+        handleAddItem(option, title);
+      }
+    });
+
     setSelected(updated);
+    prevSelectedRef.current = updated;
+
     onChange?.(updated);
   };
 
@@ -67,26 +94,57 @@ export function OptionGroup({
       </div>
 
       <div>
-        {options.map((option, index) => (
-          <div
-            key={index}
-            className={styles.item}
-            onClick={() => toggleOption(index)}
-          >
+        {options && options.length > 0 ? (
+          options.map((option, index) => (
+            <div
+              key={index}
+              className={styles.item}
+              onClick={() => toggleOption(index)}
+            >
+              <div
+                className={`${styles.check} ${
+                  type === "radio" ? styles.radio : styles.select
+                } ${isSelected(index) && styles.selected}`}
+              />
+
+              <span className={styles.optionLabel}>{option.label}</span>
+              {option.price !== undefined && (
+                <>
+                  <span
+                    className={`${styles.oldPriceLabel} ${
+                      !option.promotionalPrice && styles.hide
+                    }`}
+                  >
+                    de {formatPrice(option.price)} por
+                  </span>
+
+                  <span
+                    className={`${styles.priceLabel} ${
+                      option.promotionalPrice && styles.promotion
+                    }`}
+                  >
+                    {option.extra ? "+" : ""}
+                    {formatPrice(
+                      option.promotionalPrice
+                        ? option.promotionalPrice
+                        : option.price
+                    )}
+                  </span>
+                </>
+              )}
+            </div>
+          ))
+        ) : (
+          <div className={styles.item}>
             <div
               className={`${styles.check} ${
                 type === "radio" ? styles.radio : styles.select
-              } ${isSelected(index) && styles.selected}`}
+              } ${styles.selected}`}
             />
 
-            <span className={styles.optionLabel}>{option.label}</span>
-            {option.price !== undefined && (
-              <span className={styles.priceLabel}>
-                +R$ {option.price.toFixed(2)}
-              </span>
-            )}
+            <span className={styles.optionLabel}>Padrão</span>
           </div>
-        ))}
+        )}
       </div>
     </div>
   );

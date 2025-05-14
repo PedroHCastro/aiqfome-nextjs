@@ -64,9 +64,25 @@
   color: #6d6f73;
 }
 
+.oldPriceLabel {
+  font-size: 12px;
+  color: #6d6f73;
+
+  margin-left: auto;
+}
+
+.hide {
+  display: none;
+}
+
 .priceLabel {
   font-size: 14px;
   color: #7b1fa2;
 
   margin-left: auto;
+}
+
+.promotion {
+  color: #02a117;
+  margin-left: 4px;
 }
