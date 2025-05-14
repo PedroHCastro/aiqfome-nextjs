@@ -45,7 +45,7 @@ export function ProductsList({ items }: Props) {
           </button>
           {openIndex === index && (
             <div className={styles.contentWrapper}>
-              {category.itens.map((item) => (
+              {category.items.map((item) => (
                 <ProductCard key={item.slug} data={item} />
               ))}
             </div>

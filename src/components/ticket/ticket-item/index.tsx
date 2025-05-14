@@ -34,7 +34,7 @@ export function TicketItem({
           {extras.map((extra) => (
             <div key={`extra_${extra.id}`}>
               <span className={styles.extraTitle}>• {extra.title}</span>
-              {extra.itens.map((item, index) => (
+              {extra.items.map((item, index) => (
                 <div key={index} className={styles.extraWrapper}>
                   <span className={styles.extraLabel}>{item.option}</span>
                   {item.price && (

@@ -6,10 +6,11 @@ export interface ExtraItem {
 export interface Extra {
   id: number;
   title: string;
-  itens: ExtraItem[];
+  items: ExtraItem[];
 }
 
 export interface TicketItemModel {
+  id: number;
   name: string;
   price: number;
   quantity: number;

@@ -3,7 +3,7 @@
     "id": 1,
     "category": "Niguiris",
     "hasPromotionalPrice": true,
-    "itens": [
+    "items": [
       {
         "name": "Salmão",
         "slug": "niguiri-salmao",
@@ -31,7 +31,7 @@
     "category": "Ceviches",
     "description": "um prato super refrescante de peixe fatiado e marinado com limão",
     "hasPromotionalPrice": true,
-    "itens": [
+    "items": [
       {
         "name": "Ceviche Clássico",
         "slug": "ceviche-classico",
@@ -52,7 +52,7 @@
     "category": "Temakis",
     "description": "sushi em forma de cone com salmão e cream cheese",
     "hasPromotionalPrice": true,
-    "itens": [
+    "items": [
       {
         "name": "Califórnia",
         "slug": "california",
@@ -88,7 +88,7 @@
   {
     "id": 4,
     "category": "Bebidas",
-    "itens": [
+    "items": [
       {
         "name": "Refrigerante lata",
         "slug": "refrigerante-lata",
@@ -112,7 +112,7 @@
   {
     "id": 5,
     "category": "Sobremesas",
-    "itens": [
+    "items": [
       {
         "name": "Hot roll doce",
         "slug": "hot-roll-doce",

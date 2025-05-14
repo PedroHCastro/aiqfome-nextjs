@@ -13,5 +13,5 @@ export interface ProductsModel {
   category: string;
   description: string;
   hasPromotionalPrice?: boolean;
-  itens: ProductItem[];
+  items: ProductItem[];
 }
