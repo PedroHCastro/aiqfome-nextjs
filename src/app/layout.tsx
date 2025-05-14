@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
+import { TicketProvider } from "@/contexts/TicketContext";
 import { Header, Footer } from "@/components/global";
 
 import "./globals.css";
@@ -46,9 +47,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${nunito.variable}`}>
-        <Header />
-        {children}
-        <Footer />
+        <TicketProvider>
+          <Header />
+          {children}
+          <Footer />
+        </TicketProvider>
       </body>
     </html>
   );
